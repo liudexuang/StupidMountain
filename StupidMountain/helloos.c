@@ -4,21 +4,30 @@ main()
 {
     printf("hello world\n");
 
-	int i; /*变量声明。变量i是32比特的整数类型*/
+	int x; /*变量声明。变量i是32比特的整数类型*/
 
-	for (i = 0; i <= 19; i++)
+	int y;
+
+	int n=0;
+
+	int add = 0x0000;
+
+
+	for (x = 0; x < 320; x++)
 	{
-		printf("%d", i);
-		if (i == 31839)
+		for (y = 0; y < 200; y++)
 		{
-			i = 7;
-		}
-		else
-		{
-			i = 5;
+			if (9999 <=(x-159)*(x-159) + (y-99)*(y-99) <= 10001)
+			{
+				n = n + 1;
+				printf("%d\n", x);
+				printf("%d\n", y);
+
+				printf("hello world\n");
+				printf("%d\n", n);
+			}
+
 		}
 	}
-
-
 }
 
